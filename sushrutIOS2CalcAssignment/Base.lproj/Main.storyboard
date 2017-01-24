@@ -1,25 +1,227 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="sushrutIOS2CalcAssignment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1AS-5u-oFE">
+                                <rect key="frame" x="20" y="138" width="65" height="93"/>
+                                <color key="backgroundColor" red="0.95193880890785343" green="0.95193880890785343" blue="0.95193880890785343" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="30"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiY-ys-DBZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKL-Y4-e9E">
+                                <rect key="frame" x="89" y="138" width="65" height="93"/>
+                                <color key="backgroundColor" red="0.0" green="0.95216377617801051" blue="0.95216377617801051" alpha="0.74722960992907805" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="/">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SJk-9h-nYu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IF-Rf-s8S">
+                                <rect key="frame" x="158" y="138" width="65" height="93"/>
+                                <color key="backgroundColor" red="0.0" green="0.95216377617801051" blue="0.95216377617801051" alpha="0.74722960992907805" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="672-RT-RVm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ub0-Kl-m0l">
+                                <rect key="frame" x="227" y="138" width="73" height="93"/>
+                                <color key="backgroundColor" red="1" green="0.68003303873992271" blue="0.67305338477730015" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ez4-qf-SC3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-l8-kZn">
+                                <rect key="frame" x="227" y="236" width="73" height="154"/>
+                                <color key="backgroundColor" red="0.93764316099476441" green="0.91466721190083855" blue="0.67074885932294814" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r0m-9N-hMv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aA-3o-p9j">
+                                <rect key="frame" x="20" y="394" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="1">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dCY-uv-Yd4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mc8-Ni-E42">
+                                <rect key="frame" x="20" y="473" width="134" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="0">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GuH-ka-g3i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="giM-Dl-O0N">
+                                <rect key="frame" x="227" y="394" width="73" height="154"/>
+                                <color key="backgroundColor" red="0.58939832929297964" green="0.96001717931937169" blue="0.69215592586124308" alpha="0.72725509751773054" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="=">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nQ-XS-FFx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ff3-cO-4He">
+                                <rect key="frame" x="89" y="394" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="2">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SZB-gU-mhe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXL-Jv-fXc">
+                                <rect key="frame" x="158" y="394" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="3">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="scj-11-Vtg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jd3-iM-xzM">
+                                <rect key="frame" x="20" y="315" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="4">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Tk-Z6-Qh7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vkv-Ht-t4P">
+                                <rect key="frame" x="89" y="315" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="5">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="skD-GB-j45"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C41-3K-qCH">
+                                <rect key="frame" x="158" y="315" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="6">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gko-PM-wCT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4o7-vY-SYF">
+                                <rect key="frame" x="20" y="236" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="7">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ba4-cV-hRu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTf-qA-fId">
+                                <rect key="frame" x="89" y="236" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.95193880890785343" green="0.95193880890785343" blue="0.95193880890785343" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="8">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c5U-wY-D4r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIq-G9-6GP">
+                                <rect key="frame" x="158" y="236" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.95193880890785343" green="0.95193880890785343" blue="0.95193880890785343" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title="9">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NiF-qr-KUO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cFi-bd-SQE">
+                                <rect key="frame" x="158" y="473" width="65" height="75"/>
+                                <color key="backgroundColor" red="0.96830006544502611" green="0.96830006544502611" blue="0.96830006544502611" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="30"/>
+                                <state key="normal" title=".">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LZn-12-5ag"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZiJ-r9-4Lb">
+                                <rect key="frame" x="20" y="28" width="280" height="97"/>
+                                <color key="backgroundColor" red="0.98479340255512804" green="0.988595051916346" blue="1" alpha="0.89065270390070927" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="40"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.56049574607329844" green="0.56049574607329844" blue="0.56049574607329844" alpha="0.54440935283687941" colorSpace="calibratedRGB"/>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="label" destination="ZiJ-r9-4Lb" id="FfR-D0-kyY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="318" y="406"/>
         </scene>
     </scenes>
 </document>
